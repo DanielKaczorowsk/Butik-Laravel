@@ -1,0 +1,128 @@
+.search
+{
+  z-index: 100;
+  width:202px;
+  position: absolute;
+  background-color:white;
+  padding:0.5rem 0;
+  margin:0.125rem 0 0;
+  border-radius: 0.25rem;
+  border: 1px solid rgb(0,0,0,0.15);
+  display: none;
+}
+.filtr .accordion .accordion-item
+{
+border:none;
+}
+.accordion-button:not(.collapsed)
+{
+color:white;
+background-color: #212529;
+box-shadow: none;
+}
+.filtr .accordion-button:not(.collapsed)::after
+{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.filtr .accordion-button:focus
+{
+  box-shadow: none;
+}
+.filtr .form-check-input:checked
+{
+  background-color: #212529;
+  border-color: #212529;
+}
+.filtr .form-check-input:focus
+{
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.25);
+}
+.cont
+{
+position: fixed;
+background-color: rgba(0,0,0,.9);
+z-index: 100;
+top:0;
+left:0;
+right:0;
+bottom:0;
+justify-content:center;
+-webkit-box-align:center;
+align-items: center;
+overflow: hidden;
+}
+.forme
+{
+background-color: white;
+}
+.forme input
+{
+  text-align: center;
+}
+.icons
+{
+color:white;
+text-align: right;
+font-size: 16px;
+}
+.shop
+{
+  right: 70px;
+  z-index:100;
+  width:190px;
+  height: 190px;
+  position: absolute;
+  background-color: white;
+  display:none;
+  border-radius: 0.25rem;
+  border: 1px solid rgb(0,0,0,0.15);
+}
+.el a
+{
+  color: #212529;
+}
+.divsearch
+{
+  padding-right: 50px;
+}
+.galeria
+{
+  overflow: hidden;
+}
+.galeria img
+{
+  transition: 0.5s all ease-in-out;
+}
+.galeria:hover img
+{
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  display:block;
+}
+.search ul li{
+  margin-left: 10px;
+}
+@media all and (min-width: 992px)
+{
+.novbar .nav-item .dropdown-menu{
+  display:none;
+}
+.navbar .nav-item:hover .dropdown-menu
+{
+  display:block;
+}
+
+.navbar .navitem .dropdown-menu
+{
+  margin-top:0;
+}
+}
+@media only screen and (max-whth: 600px)
+{
+.shop:hover
+{
+display:none;
+}
+}
